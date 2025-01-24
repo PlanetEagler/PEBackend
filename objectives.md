@@ -1,0 +1,4 @@
+- Add database ( like make one ) (first)
+- Make either a websocket or api to connect from scratch to backend/database (second)
+-Make comment database and like/dislike one (last)
+- Make auto uploading  (third)
