@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "sqlite3": "^5.1.7"
-  }
+    "sqlite3": "^5.1.7",
+    "ws": "^8.18.0"
+  },
+  "name": "eaglerforgebackendsharer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
