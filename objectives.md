@@ -1,5 +1,0 @@
-- [ ] Add database ( like make one ) (first)
-- [ ] Make either a websocket or api to connect from scratch to backend/database (second)
-- [ ] Add some sort of security maybe like a login either discord or email
-- [ ] Make comment database and like/dislike one (last)
-- [ ] Make auto uploading  (third)
