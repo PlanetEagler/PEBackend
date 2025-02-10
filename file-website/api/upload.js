@@ -3,9 +3,10 @@ import multer from 'multer';
 // Configure multer to use memory storage
 const upload = multer({ storage: multer.memoryStorage() });
 
+// Disable body parsing for file uploads
 export const config = {
   api: {
-    bodyParser: false, // Disable body parsing for file uploads
+    bodyParser: false,
   },
 };
 
@@ -16,13 +17,14 @@ const uploadHandler = (req, res) => {
       return res.status(500).json({ message: 'Error uploading files' });
     }
 
-    console.log('Files received:', req.files);
-
+    // Check if files were uploaded
     if (!req.files || req.files.length === 0) {
       return res.status(400).json({ message: 'No files uploaded' });
     }
 
-    // You can process the files here (e.g., save to a database or cloud storage)
+    console.log('Files received:', req.files);
+
+    // Process files here (e.g., save to a database or cloud storage)
 
     res.json({ message: 'Files uploaded successfully', files: req.files });
   });
